@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechWave</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- navigation bar -->
+      <nav class="nav-bar">
+        <div class="nav-section flex items-center justify-between">
+          <!-- Logo -->
+          <div class="nav-logo">
+            <a class="font-bold text-3xl flex gap-0" href="index.html">
+              <span class="text-white">Tech</span>
+              <span class="gradient-text">Wave</span>
+            </a>
+          </div>
+          <!-- Menu -->
+          <ul class="text-white flex items-center gap-20">
+            <li>
+              <a
+                class="transition-colors duration-200 hover:text-[rgb(241,63,137)]"
+                href="#"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="transition-colors duration-200 hover:text-[rgb(241,63,137)]"
+                href="#"
+                >Episodes</a
+              >
+            </li>
+            <li>
+              <a
+                class="transition-colors duration-200 hover:text-[rgb(241,63,137)]"
+                href="#"
+                >Host</a
+              >
+            </li>
+          </ul>
+
+          <!-- Hamburger menu -->
+          <div class="hamburger-menu">
+            <i class="fa-solid fa-bars cursor-pointer text-white text-2xl"></i>
+          </div>
+
+          <!-- Button -->
+          <button class="btn-primary group items-center gap-2 flex">
+            Subscribe
+            <i
+              class="fa-solid fa-arrow-right transition-transform duration-300 group-hover:translate-x-2"
+            ></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>

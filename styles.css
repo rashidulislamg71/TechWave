@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #240144;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.container {
+  padding: 60px 80px;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-green-500 {
+  color: #10b981;
+}
+
+.btn-primary {
+  background: #dbd639;
+  background: linear-gradient(20deg,
+      rgb(233, 227, 63) 21%,
+      rgb(241, 63, 137) 40%,
+      rgb(157, 20, 236) 90%);
+  color: white;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.gradient-text {
+  background: linear-gradient(8deg,
+      rgb(233, 227, 63) 10%,
+      rgb(241, 63, 137) 40%,
+      rgb(95, 8, 146) 84%);
+  background-clip: text;
+  color: transparent;
+}
+
+/* NavBar Styles */
+.nav-bar {
+  background-color: #240144;
+  padding: 20px 80px;
+}
