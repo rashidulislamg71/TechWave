@@ -1,29 +1,49 @@
-@import "tailwindcss";
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  list-style: none;
+  text-decoration: none;
 }
 
 body {
-  background-color: #240144;
+  background-color: rgb(25, 13, 50);
   max-width: 1600px;
   margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px
 }
 
 .container {
   padding: 60px 80px;
 }
 
-.text-white {
+.white-text {
   color: white;
 }
 
-.text-green-500 {
-  color: #10b981;
+.green-text {
+  color: #09db6b;
 }
+
+.gray-text {
+  color: #bcbec2;
+}
+
+p {
+  font-size: 16px;
+}
+
+.text-size-18 {
+  font-size: 18px;
+}
+
 
 .btn-primary {
   background: #dbd639;
@@ -32,10 +52,11 @@ body {
       rgb(241, 63, 137) 40%,
       rgb(157, 20, 236) 90%);
   color: white;
-  padding: 5px 20px;
+  padding: 8px 15px;
   border: none;
   border-radius: 20px;
   cursor: pointer;
+  font-size: 18px;
 }
 
 .gradient-text {
@@ -47,8 +68,170 @@ body {
   color: transparent;
 }
 
+.hover-effect:hover {
+  color: rgb(241, 63, 137);
+  transition: color 0.3s ease-in-out;
+}
+
 /* NavBar Styles */
 .nav-bar {
-  background-color: #240144;
   padding: 20px 80px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.564);
+}
+
+.nav-logo .logo-text {
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  gap: 0px;
+}
+
+.nav-logo a .tech {
+  color: white;
+
+}
+
+/* nav menu  */
+.menu {
+  gap: 60px;
+}
+
+.menu li a {
+  color: white;
+  font-size: 18px;
+}
+
+/* nav btn  */
+.nav-btn {
+  gap: 5px;
+  font-size: 18px;
+}
+
+.nav-btn i {
+  transition: transform 0.3s ease-in-out;
+  font-size: 18px;
+}
+
+.nav-btn:hover i {
+  transform: translateX(8px);
+}
+
+/* hero section styles  */
+.hero-section {
+  background-image: url(assets/hero-bg.png);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.hero-container {
+  flex-direction: column;
+  text-align: center;
+  gap: 60px;
+}
+
+.microphone-image-in-hero-banner {
+  position: relative;
+
+}
+
+.microphone-image-bg-overlay {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 6px solid #42038e;
+}
+
+.microphone-image-bg-overlay>img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: auto;
+}
+
+.microphone-image-bg-overlay .new-badge {
+  position: absolute;
+  top: 25px;
+  right: 0px;
+  background-color: #0bd66a;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: -2px 3px 10px rgb(2, 81, 145);
+}
+
+/* hero text and button styles  */
+
+.hero-text-btn {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-text-btn h1 {
+  font-size: 48px;
+  color: white;
+}
+
+.hero-btns {
+  gap: 20px;
+}
+
+.hero-btn-1 {
+  transition: all 0.3s ease;
+}
+
+.hero-btn-1:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 5px 20px rgb(212, 221, 80);
+}
+
+.hero-btns .hero-btn-2 {
+  border: 1px solid green;
+  background: transparent;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.hero-btn-2:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 5px 20px green;
+
+}
+
+/* Responsive styles for different screen sizes can be added here. */
+/* Navabar responsive styles */
+
+
+/* Desktop  */
+@media (min-width: 992px) {
+  body {
+    max-width: 100%;
+  }
+
+}
+
+/* Medium device */
+@media (max-width: 992px) {
+  .container {
+    padding: 30px;
+  }
+}
+
+/* Small device */
+@media (max-width: 576px) {
+  .container {
+    padding: 20px 10px;
+  }
 }

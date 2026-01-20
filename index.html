@@ -1,12 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechWave</title>
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
     <!-- font awesome cdn -->
     <link
       rel="stylesheet"
@@ -15,38 +13,40 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- custom css -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsive.css" />
   </head>
   <body>
     <header>
       <!-- navigation bar -->
-      <nav class="nav-bar">
-        <div class="nav-section flex items-center justify-between">
+      <nav class="nav-bar flex">
           <!-- Logo -->
           <div class="nav-logo">
-            <a class="font-bold text-3xl flex gap-0" href="index.html">
-              <span class="text-white">Tech</span>
-              <span class="gradient-text">Wave</span>
+            <a class="logo-text font-bold flex" href="index.html">
+              <div class="tech">Tech</div>
+              <div class="wave gradient-text">Wave</div>
             </a>
           </div>
           <!-- Menu -->
-          <ul class="text-white flex items-center gap-20">
+          <ul class="menu flex">
             <li>
               <a
-                class="transition-colors duration-200 hover:text-[rgb(241,63,137)]"
+                class="hover-effect"
                 href="#"
                 >About</a
               >
             </li>
             <li>
               <a
-                class="transition-colors duration-200 hover:text-[rgb(241,63,137)]"
+                class="hover-effect"
                 href="#"
                 >Episodes</a
               >
             </li>
             <li>
               <a
-                class="transition-colors duration-200 hover:text-[rgb(241,63,137)]"
+                class="hover-effect"
                 href="#"
                 >Host</a
               >
@@ -54,19 +54,48 @@
           </ul>
 
           <!-- Hamburger menu -->
-          <div class="hamburger-menu">
+          <!-- <div class="hamburger-menu">
             <i class="fa-solid fa-bars cursor-pointer text-white text-2xl"></i>
-          </div>
+          </div> -->
 
           <!-- Button -->
-          <button class="btn-primary group items-center gap-2 flex">
+          <button class="btn-primary nav-btn flex">
             Subscribe
             <i
               class="fa-solid fa-arrow-right transition-transform duration-300 group-hover:translate-x-2"
             ></i>
           </button>
-        </div>
       </nav>
     </header>
+
+    <!-- main content here  -->
+    <main>
+      <!-- hero section  -->
+      <section class="hero-section">
+     <div class="container hero-container flex">
+         <!-- microphone image  -->
+        <div class="microphone-image-in-hero-banner  ">
+          <div class="microphone-image-bg-overlay flex btn-primary">
+            <img src="assets/microphone.png" alt="microphone image in hero banner.">
+            <div class="new-badge">NEW</div>
+          </div>
+          <!-- microphone with new  -->
+        </div>
+
+        <!-- hero text content and btns -->
+         <div class="hero-text-btn flex">
+         
+            <h1 class="white-text hero-title">TechWave</h1>
+            <p class="gray-text ">Your daily dose of tech insights, productivity hacks, and personal growth.</p>
+        
+          <div class="hero-btns flex">
+            <button class="flex btn-primary hero-btn-1"><img src="assets/spotify.png" alt="spotify icon">Listen On Spotify</button>
+
+            <button class=" flex hero-btn-2 green-text"><img src="assets/message.png" alt="message icon">Subscribe</button>
+          </div>
+         </div>
+     </div>
+      </section>
+    </main>
   </body>
 </html>
