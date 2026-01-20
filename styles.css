@@ -11,6 +11,7 @@ body {
   background-color: rgb(25, 13, 50);
   max-width: 1600px;
   margin: 0 auto;
+  color: white;
 }
 
 .flex {
@@ -18,6 +19,14 @@ body {
   align-items: center;
   justify-content: center;
   gap: 10px
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  width: 100%;
+  gap: 150px;
 }
 
 .container {
@@ -123,9 +132,10 @@ p {
   background-image: url(assets/hero-bg.png);
   background-size: cover;
   background-position: center;
-  height: 100%;
-  width: 100%;
   background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
 }
 
 .hero-container {
@@ -210,6 +220,58 @@ p {
 
 }
 
+
+/* About section */
+.about-podcast-content {
+  flex-direction: column;
+  text-align: center;
+  gap: 50px;
+  line-height: 30px;
+}
+
+.about-text {
+  max-width: 686px;
+  margin: 0 auto;
+}
+
+.about-text h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.about-join-text {
+  margin-top: 20px;
+}
+
+/* Divider */
+.h-border {
+  width: 100%;
+  height: 1px;
+  background: #3d3d3d;
+}
+
+/* Progress counter */
+.progress-counter .counter {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.progress-counter .counter.flex {
+  justify-content: center;
+}
+
+.progress-counter .counter i {
+  font-size: 24px;
+}
+
+.progress-counter .counter-text {
+  font-size: 14px;
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+
+
 /* Responsive styles for different screen sizes can be added here. */
 /* Navabar responsive styles */
 
@@ -225,13 +287,34 @@ p {
 /* Medium device */
 @media (max-width: 992px) {
   .container {
-    padding: 30px;
+    padding: 40px 20px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
   }
 }
 
 /* Small device */
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
+
+  /* main content  */
   .container {
-    padding: 20px 10px;
+    padding: 40px 10px;
+  }
+
+  /* about the podcast section responsive styles  */
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+
+  .about-podcast-content {
+    gap: 40px;
+  }
+
+  .about-text h1 {
+    font-size: 32px;
   }
 }
