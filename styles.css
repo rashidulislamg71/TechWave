@@ -18,7 +18,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px
+  gap: 10px;
 }
 
 .grid {
@@ -272,7 +272,225 @@ p {
 }
 
 
-/* Responsive styles for different screen sizes can be added here. */
+/* why choose section styles  */
+
+.techwave-features {
+  background: #200b46;
+}
+
+.why-choose-title{
+  color: #ffff;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 50px;
+  margin-bottom: -30px;
+}
+
+.feature-grid {
+  display: grid;
+  margin: 0 auto;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.feature-card {
+  background-color: rgb(38, 17, 83);
+  padding: 30px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+}
+
+.feature-card:hover {
+  box-shadow: 5px 5px 20px rgb(8, 8, 137);
+}
+
+.feature-card h3 {
+  font-size: 20px;
+  color: #ffff;
+}
+
+.feature-card p {
+  line-height: 24px;
+  color: #bcbec2;
+}
+
+.icon img {
+  width: auto;
+}
+
+.icon .exclusive-img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: -12px;
+}
+
+.feature-card .content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.tall {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.wide {
+  grid-column: span 2;
+}
+
+.big {
+  grid-column: span 2;
+}
+
+.small {
+  grid-column: span 1;
+}
+
+/* Featured Episodes section styles  */
+.section-title h1 {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.feature-epsod-cards {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feature-epsod-cards .video-card {
+  background: rgb(38, 17, 83);
+  height: 360px;
+  width: 320px;
+  border-radius: 15px;
+  flex-direction: column;
+  gap: 0px;
+  transition: all 0.2s ease;
+}
+
+.video-card .video .iframe-video {
+  width: 320px;
+  height: 187px;
+  border-radius: 15px 15px 0 0;
+}
+
+.video-card .card-description {
+  padding: 15px;
+  flex-direction: column;
+  align-items: start;
+}
+
+.video-card .video-duration {
+  gap: 5px;
+}
+
+.feature-epsod-cards .video-card:hover {
+  box-shadow: 5px 5px 25px rgb(10, 10, 104);
+}
+
+/* meet the host section styles  */
+.meet-host-card {
+  width: 100%;
+  border-radius: 15px;
+  background: rgb(38, 17, 83);
+  gap: 20px;
+  padding: 20px;
+}
+
+.host-info {
+  flex-direction: column;
+  align-items: start;
+}
+
+.host-info>p {
+  line-height: 24px;
+}
+
+.host-info>h3 {
+  font-size: 30px;
+}
+
+.host-social a {
+  padding: 10px;
+  border: 2px solid gray;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s ease;
+}
+
+.host-social a img {
+  width: 20px;
+  height: 20px;
+  transition: all .3s ease;
+}
+
+.host-social a:hover img {
+  transform: scale(1.3);
+}
+
+/* footer section styles  */
+.footer-section {
+  background-image: url(assets/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+}
+
+.footer-logo a {
+  font-size: 50px;
+  font-weight: bold;
+  gap: 0px;
+}
+
+.footer-logo .tech {
+  color: white;
+}
+
+.footer-social-links {
+  gap: 25px;
+  max-width: 600px;
+}
+
+.footer-social-links a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #bcbec2;
+  font-size: 14px;
+  margin-top: -10px;
+}
+
+.footer-social-links a:hover {
+  text-shadow: 2px 2px 20px rgba(243, 244, 248, 0.838);
+}
+
+.footer-social-links a img {
+  width: 20px;
+  height: auto;
+}
+
+.copyRight {
+  text-align: center;
+  font-size: 14px;
+}
+
+
+/* Responsive styles for different screen sizes */
 /* Navabar responsive styles */
 
 
@@ -293,6 +511,27 @@ p {
   .grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
+  }
+
+  .feature-epsod-cards {
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tall,
+  .wide,
+  .big,
+  .small {
+    grid-column: span 2;
+    grid-row: auto;
+  }
+
+  .section-title {
+    font-size: 36px;
   }
 }
 
@@ -317,4 +556,76 @@ p {
   .about-text h1 {
     font-size: 32px;
   }
+
+  /* why choose responsive  */
+  .section-title {
+    font-size: 30px;
+    padding-top: 40px;
+    margin-bottom: -10px;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tall,
+  .wide,
+  .big,
+  .small {
+    grid-column: span 1;
+  }
+
+  /* Featured Episodes section styles responsive */
+  .section-title h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .feature-epsod-cards {
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .feature-epsod-cards .video-card {
+    width: 340px;
+  }
+
+  .video-card .video .iframe-video {
+    width: 340px;
+  }
+
+  /* meet the host section styles responsive  */
+  .host-info {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .host-info>h3 {
+    font-size: 26px;
+  }
+
+  .meet-host-card {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* footer responsive styles */
+  .footer-section {
+    padding: 20px 0px;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+  }
+
+  .footer-logo a {
+    font-size: 36px;
+
+  }
+
+  .footer-social-links {
+    max-width: 300px;
+    flex-wrap: wrap;
+  }
+
 }
