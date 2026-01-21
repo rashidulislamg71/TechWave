@@ -118,15 +118,21 @@ p {
 }
 
 /* nav btn  */
+.nav-btn {
+  transition: all .3s ease;
+}
 .nav-btn i {
   transition: transform 0.3s ease-in-out;
   font-size: 18px;
 }
 
+.nav-btn:hover{
+  box-shadow: 3px 3px 20px rgb(226, 226, 49);
+}
+
 .nav-btn:hover i {
   transform: translateX(8px);
 }
-
 
 /* hero section styles  */
 .hero-section {
@@ -147,7 +153,6 @@ p {
 
 .microphone-image-in-hero-banner {
   position: relative;
-
 }
 
 .microphone-image-bg-overlay {
@@ -157,17 +162,32 @@ p {
   border-radius: 50%;
   border: 6px solid #42038e;
   margin-top: 25px;
-
 }
 
-.microphone-image-bg-overlay>img {
+.microphone-image-bg-overlay > img {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 120px;
   height: auto;
+  animation: floatMic 3s ease-in-out infinite;
 
+}
+
+/* animation  */
+@keyframes floatMic {
+  0% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) translateY(-10px);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
 }
 
 .microphone-image-bg-overlay .new-badge {
@@ -176,15 +196,33 @@ p {
   right: 0px;
   background-color: #0bd66a;
   color: white;
-  padding: 6px 10px;
+  padding: 5px 10px;
   border-radius: 20px;
   font-size: 14px;
   font-weight: bold;
-  box-shadow: -2px 3px 10px rgb(2, 81, 145);
+  box-shadow: -2px 3px 10px rgb(2, 145, 28);
+  animation: pulseBadge 1.5s ease-in-out infinite;
+  transform-origin: center;
 }
 
-/* hero text and button styles  */
+/* NEW badge pulse animation */
+@keyframes pulseBadge {
+  0% {
+    transform: scale(1);
+  }
 
+  50% {
+    transform: scale(1.1);
+    color: rgb(23, 7, 59);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/* hero text and button styles  */
 .hero-text-btn {
   flex-direction: column;
   gap: 20px;
@@ -454,7 +492,7 @@ p {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
-  /* height: 340px; */
+  height: 280px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -474,8 +512,9 @@ p {
 }
 
 .footer-social-links {
-  gap: 25px;
+  gap: 30px;
   max-width: 600px;
+  margin-bottom: 10px;
 }
 
 .footer-social-links a {

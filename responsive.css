@@ -184,8 +184,6 @@
         font-size: 26px;
         cursor: pointer;
     }
-
-
     .about-podcast-content {
         gap: 40px;
     }
@@ -196,7 +194,7 @@
 
     /* why choose responsive  */
     .why-choose-title {
-        font-size: 28px;
+        font-size: 30px;
         padding-top: 40px;
         margin-bottom: -10px;
     }
