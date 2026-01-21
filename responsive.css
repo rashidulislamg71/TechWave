@@ -52,6 +52,7 @@
 
 /* Small device */
 @media screen and (max-width: 576px) {
+
     /* main content  */
     .container {
         padding: 40px 10px;
@@ -162,8 +163,8 @@
     }
 
     /* why choose responsive  */
-    .section-title {
-        font-size: 30px;
+    .why-choose-title {
+        font-size: 28px;
         padding-top: 40px;
         margin-bottom: -10px;
     }
@@ -182,7 +183,6 @@
     /* Featured Episodes section styles responsive */
     .section-title h1 {
         font-size: 30px;
-        margin-bottom: 40px;
     }
 
     .feature-epsod-cards {
@@ -191,14 +191,19 @@
     }
 
     .feature-epsod-cards .video-card {
-        width: 340px;
+        width: 330px;
     }
 
     .video-card .video .iframe-video {
-        width: 340px;
+        width: 330px;
     }
 
     /* meet the host section styles responsive  */
+
+    .meet-host-title {
+        font-size: 30px;
+    }
+
     .host-info {
         text-align: center;
         justify-content: center;
@@ -216,8 +221,8 @@
 
     /* footer responsive styles */
     .footer-section {
-        padding: 20px 0px;
-        background-size: cover;
+        padding: 40px 0px;
+        background-size: 100% 100%;
         background-position: center;
         height: auto;
     }

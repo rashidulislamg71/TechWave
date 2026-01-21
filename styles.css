@@ -131,7 +131,7 @@ p {
 /* hero section styles  */
 .hero-section {
   background-image: url(assets/hero-bg.png);
-  background-size: 100% ;
+  background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
@@ -360,7 +360,7 @@ p {
   font-size: 40px;
   color: white;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .feature-epsod-cards {
@@ -399,6 +399,14 @@ p {
 }
 
 /* meet the host section styles  */
+
+.meet-host-title {
+  color: #ffff;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+
 .meet-host-card {
   width: 100%;
   border-radius: 15px;
@@ -444,9 +452,9 @@ p {
 .footer-section {
   background-image: url(assets/footer-bg.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center;
-  height: 340px;
+  /* height: 340px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -492,5 +500,3 @@ p {
   text-align: center;
   font-size: 14px;
 }
-
-
