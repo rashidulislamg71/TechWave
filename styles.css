@@ -405,24 +405,31 @@ p {
 }
 
 .feature-epsod-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 70px;
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px; 
   justify-items: center;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
+
+
 
 .video-card {
   background: rgb(38, 17, 83);
-  max-height: 360px;
-  max-width: 320px;
+  width: 100%; 
+  max-width: 380px;
+  min-height: 360px; 
   border-radius: 15px;
+  display: flex; 
   flex-direction: column;
-  gap: 0px;
   transition: all 0.2s ease;
+  overflow: hidden; 
 }
 
 .video-card .video .iframe-video {
-  width: 320px;
+  width: 330px;
   height: 187px;
   border-radius: 15px 15px 0 0;
 }
@@ -519,7 +526,7 @@ p {
 .footer-social-links {
   gap: 30px;
   max-width: 600px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .footer-social-links a {
