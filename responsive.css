@@ -55,11 +55,6 @@
         gap: 50px;
     }
 
-    .feature-epsod-cards {
-        justify-content: center;
-        gap: 50px;
-    }
-
     .feature-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -195,7 +190,6 @@
     .why-choose-title {
         font-size: 30px;
         padding-top: 40px;
-    
     }
 
     .feature-grid {
@@ -215,8 +209,9 @@
     }
 
     .feature-epsod-cards {
-        justify-content: center;
-        gap: 40px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        justify-items: center;
     }
 
     .feature-epsod-cards .video-card {

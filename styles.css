@@ -94,7 +94,7 @@ p {
   color: white;
 }
 
-.wave{
+.wave {
   background: linear-gradient(8deg,
       rgb(233, 227, 63) 10%,
       rgb(241, 63, 137) 40%,
@@ -121,12 +121,13 @@ p {
 .nav-btn {
   transition: all .3s ease;
 }
+
 .nav-btn i {
   transition: transform 0.3s ease-in-out;
   font-size: 18px;
 }
 
-.nav-btn:hover{
+.nav-btn:hover {
   box-shadow: 3px 3px 20px rgb(226, 226, 49);
 }
 
@@ -164,7 +165,7 @@ p {
   margin-top: 25px;
 }
 
-.microphone-image-bg-overlay > img {
+.microphone-image-bg-overlay>img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -346,7 +347,7 @@ p {
 }
 
 .feature-card:hover {
- box-shadow: 5px 5px 25px rgb(12, 12, 129)
+  box-shadow: 5px 5px 25px rgb(12, 12, 129)
 }
 
 .feature-card h3 {
@@ -401,9 +402,10 @@ p {
 }
 
 .feature-epsod-cards {
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
+  justify-items: center;
 }
 
 .video-card {
