@@ -131,7 +131,7 @@ p {
 /* hero section styles  */
 .hero-section {
   background-image: url(assets/hero-bg.png);
-  background-size: cover;
+  background-size: 100% ;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
@@ -156,6 +156,8 @@ p {
   height: 300px;
   border-radius: 50%;
   border: 6px solid #42038e;
+  margin-top: 25px;
+
 }
 
 .microphone-image-bg-overlay>img {
@@ -163,8 +165,9 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 150px;
+  width: 120px;
   height: auto;
+
 }
 
 .microphone-image-bg-overlay .new-badge {
@@ -491,191 +494,3 @@ p {
 }
 
 
-/* Responsive styles for different screen sizes */
-/* Navabar responsive styles */
-
-
-/* Desktop  */
-@media (min-width: 992px) {
-  body {
-    max-width: 100%;
-  }
-
-}
-
-/* Medium device */
-@media (max-width: 992px) {
-  .container {
-    padding: 40px 20px;
-  }
-
-  /* NavBar responsive  Styles */
-  .nav-bar {
-    padding: 20px 30px;
-  }
-
-  /* nav menu  */
-  .menu {
-    gap: 30px;
-  }
-
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
-  }
-
-  .feature-epsod-cards {
-    justify-content: center;
-    gap: 50px;
-  }
-
-  .feature-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .tall,
-  .wide,
-  .big,
-  .small {
-    grid-column: span 2;
-    grid-row: auto;
-  }
-
-  .section-title {
-    font-size: 36px;
-  }
-}
-
-/* Small device */
-@media screen and (max-width: 576px) {
-
-  /* main content  */
-  .container {
-    padding: 40px 10px;
-  }
-
-  /* about the podcast section responsive styles  */
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
-  }
-
-  .btn-primary {
-    padding: 8px 10px;
-    font-size: 16px;
-  }
-
-  .btn-primary i {
-    font-size: 16px;
-  }
-
-
-  /* NavBar responsive Styles */
-  .nav-bar {
-    padding: 18px 20px;
-  }
-
-  .nav-logo .logo-text {
-    font-size: 28px;
-  }
-
-  /* nav menu  */
-  .menu-links {
-    display: none;
-  }
-
-  /* nav btn  */
-  .nav-btn {
-    display: none;
-  }
-
-  .hamburger-menu {
-    display: inline-block;
-  }
-
-  .hamburger-menu i {
-    font-size: 26px;
-    cursor: pointer;
-  }
-
-
-  .about-podcast-content {
-    gap: 40px;
-  }
-
-  .about-text h1 {
-    font-size: 30px;
-  }
-
-  /* why choose responsive  */
-  .section-title {
-    font-size: 30px;
-    padding-top: 40px;
-    margin-bottom: -10px;
-  }
-
-  .feature-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .tall,
-  .wide,
-  .big,
-  .small {
-    grid-column: span 1;
-  }
-
-  /* Featured Episodes section styles responsive */
-  .section-title h1 {
-    font-size: 30px;
-    margin-bottom: 40px;
-  }
-
-  .feature-epsod-cards {
-    justify-content: center;
-    gap: 40px;
-  }
-
-  .feature-epsod-cards .video-card {
-    width: 340px;
-  }
-
-  .video-card .video .iframe-video {
-    width: 340px;
-  }
-
-  /* meet the host section styles responsive  */
-  .host-info {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .host-info>h3 {
-    font-size: 26px;
-  }
-
-  .meet-host-card {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  /* footer responsive styles */
-  .footer-section {
-    padding: 20px 0px;
-    background-size: cover;
-    background-position: center;
-    height: auto;
-  }
-
-  .footer-logo a {
-    font-size: 36px;
-
-  }
-
-  .footer-social-links {
-    max-width: 300px;
-    flex-wrap: wrap;
-  }
-
-}
