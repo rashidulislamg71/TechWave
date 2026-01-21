@@ -10,6 +10,7 @@
 body {
   background-color: rgb(26, 12, 48);
   max-width: 1600px;
+  width: 100%;
   margin: 0 auto;
   color: white;
 }
@@ -69,15 +70,6 @@ p {
   font-size: 18px;
 }
 
-.gradient-text {
-  background: linear-gradient(8deg,
-      rgb(233, 227, 63) 10%,
-      rgb(241, 63, 137) 40%,
-      rgb(95, 8, 146) 84%);
-  background-clip: text;
-  color: transparent;
-}
-
 .hover-effect:hover {
   color: rgb(241, 63, 137);
   transition: color 0.3s ease-in-out;
@@ -100,7 +92,15 @@ p {
 
 .nav-logo a .tech {
   color: white;
+}
 
+.wave{
+  background: linear-gradient(8deg,
+      rgb(233, 227, 63) 10%,
+      rgb(241, 63, 137) 40%,
+      rgb(95, 8, 146) 84%);
+  background-clip: text;
+  color: transparent;
 }
 
 .hamburger-menu {
@@ -347,7 +347,7 @@ p {
 }
 
 .feature-card:hover {
-  box-shadow: 5px 5px 20px rgb(8, 8, 137);
+ box-shadow: 5px 5px 25px rgb(12, 12, 129)
 }
 
 .feature-card h3 {
@@ -404,6 +404,7 @@ p {
 .feature-epsod-cards {
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 0px;
 }
 
 .feature-epsod-cards .video-card {
@@ -433,7 +434,7 @@ p {
 }
 
 .feature-epsod-cards .video-card:hover {
-  box-shadow: 5px 5px 25px rgb(10, 10, 104);
+  box-shadow: 5px 5px 25px rgb(12, 12, 129)
 }
 
 /* meet the host section styles  */
