@@ -54,7 +54,6 @@ p {
   font-size: 18px;
 }
 
-
 .btn-primary {
   background: #dbd639;
   background: linear-gradient(20deg,
@@ -520,7 +519,7 @@ p {
 }
 
 .footer-social-links {
-  gap: 30px;
+  gap: 25px;
   max-width: 600px;
   margin-bottom: 5px;
 }
