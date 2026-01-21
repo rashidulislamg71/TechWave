@@ -101,6 +101,9 @@ p {
       rgb(95, 8, 146) 84%);
   background-clip: text;
   color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 
 .hamburger-menu {
