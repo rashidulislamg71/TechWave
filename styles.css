@@ -62,6 +62,7 @@ p {
       rgb(157, 20, 236) 90%);
   color: white;
   padding: 8px 15px;
+  gap: 5px;
   border: none;
   border-radius: 20px;
   cursor: pointer;
@@ -102,6 +103,10 @@ p {
 
 }
 
+.hamburger-menu {
+  display: none;
+}
+
 /* nav menu  */
 .menu {
   gap: 60px;
@@ -113,11 +118,6 @@ p {
 }
 
 /* nav btn  */
-.nav-btn {
-  gap: 5px;
-  font-size: 18px;
-}
-
 .nav-btn i {
   transition: transform 0.3s ease-in-out;
   font-size: 18px;
@@ -126,6 +126,7 @@ p {
 .nav-btn:hover i {
   transform: translateX(8px);
 }
+
 
 /* hero section styles  */
 .hero-section {
@@ -278,7 +279,7 @@ p {
   background: #200b46;
 }
 
-.why-choose-title{
+.why-choose-title {
   color: #ffff;
   text-align: center;
   font-size: 40px;
@@ -508,6 +509,16 @@ p {
     padding: 40px 20px;
   }
 
+  /* NavBar responsive  Styles */
+  .nav-bar {
+    padding: 20px 30px;
+  }
+
+  /* nav menu  */
+  .menu {
+    gap: 30px;
+  }
+
   .grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
@@ -549,12 +560,51 @@ p {
     gap: 50px;
   }
 
+  .btn-primary {
+    padding: 8px 10px;
+    font-size: 16px;
+  }
+
+  .btn-primary i {
+    font-size: 16px;
+  }
+
+
+  /* NavBar responsive Styles */
+  .nav-bar {
+    padding: 18px 20px;
+  }
+
+  .nav-logo .logo-text {
+    font-size: 28px;
+  }
+
+  /* nav menu  */
+  .menu-links {
+    display: none;
+  }
+
+  /* nav btn  */
+  .nav-btn {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: inline-block;
+  }
+
+  .hamburger-menu i {
+    font-size: 26px;
+    cursor: pointer;
+  }
+
+
   .about-podcast-content {
     gap: 40px;
   }
 
   .about-text h1 {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   /* why choose responsive  */
@@ -577,7 +627,7 @@ p {
 
   /* Featured Episodes section styles responsive */
   .section-title h1 {
-    font-size: 36px;
+    font-size: 30px;
     margin-bottom: 40px;
   }
 
