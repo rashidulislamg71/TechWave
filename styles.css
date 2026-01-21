@@ -405,31 +405,28 @@ p {
 }
 
 .feature-epsod-cards {
-    display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px; 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
   justify-items: center;
   width: 100%;
-  padding: 0 20px;
   box-sizing: border-box;
 }
 
-
-
 .video-card {
   background: rgb(38, 17, 83);
-  width: 100%; 
-  max-width: 380px;
-  min-height: 360px; 
+  width: 100%;
+  max-width: 340px;
+  min-height: 360px;
   border-radius: 15px;
-  display: flex; 
+  display: flex;
   flex-direction: column;
   transition: all 0.2s ease;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .video-card .video .iframe-video {
-  width: 330px;
+  width: 340px;
   height: 187px;
   border-radius: 15px 15px 0 0;
 }
