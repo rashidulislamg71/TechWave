@@ -13,6 +13,34 @@
         padding: 40px 20px;
     }
 
+    /* hero responsive styles  */
+    .hero-container {
+        gap: 40px;
+    }
+
+    .microphone-image-bg-overlay {
+        width: 250px;
+        height: 250px;
+        margin-top: 0px;
+        position: relative;
+        top: 65px;
+        left: 0px;
+    }
+
+    .microphone-image-bg-overlay>img {
+        width: 80px;
+        height: auto;
+    }
+
+    .microphone-image-bg-overlay .new-badge {
+        top: 10px;
+        right: 0px;
+    }
+
+    .hero-text-btn {
+        margin-top: 50px;
+    }
+
     /* NavBar responsive  Styles */
     .nav-bar {
         padding: 20px 30px;
@@ -47,6 +75,13 @@
 
     .section-title {
         font-size: 36px;
+    }
+
+    .footer-section {
+        padding: 40px 0px;
+        background-size: cover;
+        background-position: center;
+        height: auto;
     }
 }
 
@@ -121,9 +156,6 @@
         padding: 8px 12px;
         font-size: 16px;
     }
-
-
-
 
     /* NavBar responsive Styles */
     .nav-bar {
