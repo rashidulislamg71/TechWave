@@ -9,7 +9,7 @@
 
 body {
   background-color: rgb(26, 12, 48);
-  max-width: 1600px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   color: white;
@@ -406,11 +406,10 @@ p {
 
 .feature-epsod-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   justify-items: center;
   width: 100%;
-  box-sizing: border-box;
 }
 
 .video-card {

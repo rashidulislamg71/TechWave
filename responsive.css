@@ -213,15 +213,14 @@
         gap: 30px;
         justify-items: center;
     }
-
     .feature-epsod-cards .video-card {
         width: 330px;
     }
-
     .video-card .video .iframe-video {
         width: 330px;
     }
 
+    
     /* meet the host section styles responsive  */
 
     .meet-host-title {
